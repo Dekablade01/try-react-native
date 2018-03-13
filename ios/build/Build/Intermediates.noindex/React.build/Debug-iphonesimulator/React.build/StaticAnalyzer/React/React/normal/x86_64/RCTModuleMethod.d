@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTModuleMethod.mm \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTModuleMethod.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTBridgeMethod.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTNullability.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTCxxConvert.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTManagedPointer.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Base/RCTParserUtils.h \
+  /Users/dekablade01/Repositories/react-native-via-cli/node_modules/react-native/React/Profiler/RCTProfile.h
