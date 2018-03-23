@@ -1,94 +1,49 @@
-import React from 'react';
+import { Navigation } from "react-native-navigation";
+import { Provider } from "react-redux";
 
-import {
-    StyleSheet,
-    View, 
-    FlatList } from 'react-native';
+import AuthScreen from "./src/screens/Auth/Auth";
+import SharePlaceScreen from "./src/screens/SharePlace/SharePlace";
+import FindPlaceScreen from "./src/screens/FindPlace/FindPlace";
+import PlaceDetailScreen from "./src/screens/PlaceDetail/PlaceDetail";
+import SideDrawer from "./src/screens/SideDrawer/SideDrawer";
+import configureStore from "./src/store/configureStore";
 
-import ListItem from './src/components/ListItem/ListItem';
-import InputBar from './src/components/InputBarAndButton/InputBarAndButton';
-import PlaceDetail from './src/components/PlaceDetail/PlaceDetail';
+const store = configureStore();
 
-export default class App extends React.Component {
-    state = {
-        placeName: "",
-        places: [],
-        selectedPlace: null,
-    };
+// Register Screens
+Navigation.registerComponent(
+  "awesome-places.AuthScreen",
+  () => AuthScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  "awesome-places.SharePlaceScreen",
+  () => SharePlaceScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  "awesome-places.FindPlaceScreen",
+  () => FindPlaceScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  "awesome-places.PlaceDetailScreen",
+  () => PlaceDetailScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  "awesome-places.SideDrawer",
+  () => SideDrawer
+);
 
-    placeSelectedHandler = (key) => {
-        // this.setState({
-        //     places: this.state.places.filter(place => { return place.key !== key; })
-        // });
-
-        this.setState(prevState => {
-            return { selectedPlace: prevState.places.find(place => {
-                return place.key === key;
-            })}
-        })
-    }
-
-    placeNameChangedHandler = (text) => {
-        this.setState({ placeName: text, })
-    };
-
-    placeSubmitHandler = () => {
-        if (this.state.placeName.trim() === "") {
-            return;
-        }
-
-        this.setState(prevState => {
-            return { 
-                places: prevState.places.concat({
-                    key: Math.random(), 
-                    name: this.state.placeName,
-                    image: {
-                        uri: "https://wiki.jenkins.io/download/attachments/2916393/headshot.png?version=1&modificationDate=1302753947000&api=v2", 
-                        width: 30, 
-                        height: 30
-                    }
-                })
-             }
-        });
-    };
-
-  render() {
-    return (
-          <View style={styles.container}>
-            <PlaceDetail
-                selectedPlace={this.state.selectedPlace}
-            />
-              <InputBar
-                textFieldValueDidChanged={ (text) => this.placeNameChangedHandler(text) }
-                buttonDidTouchUpInside={ this.placeSubmitHandler }
-              />
-              <FlatList 
-                data={this.state.places} 
-                style={styles.listContainer}
-                renderItem={ (info) => (
-                    <ListItem
-                        placeName={info.item.name}
-                        placeImage={info.item.image}
-                        onItemSelected={ (_) => { this.placeSelectedHandler(info.item.key) }}
-                        image={info.item.image}
-                    />
-                )}
-                />
-          </View>
-    );
+// Start a App
+Navigation.startSingleScreenApp({
+  screen: {
+    screen: "awesome-places.AuthScreen",
+    title: "Login"
   }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    display: 'flex',
-    paddingTop: 26,
-    flexDirection: 'column',
-    backgroundColor: '#fff',
-    paddingLeft: 20,
-    paddingRight: 20,
-  },
-    listContainer: {
-        flexBasis: '100%'
-    }
 });
