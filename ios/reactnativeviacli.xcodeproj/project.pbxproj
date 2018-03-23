@@ -38,6 +38,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9EB82DD62064BFB2004880B1 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB82DCF2064BF8F004880B1 /* libReactNativeNavigation.a */; };
 		9EB82DD72064BFBA004880B1 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB82DD52064BFA5004880B1 /* libRNVectorIcons.a */; };
+		9EB82DE72064C919004880B1 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EB82DD82064BFDB004880B1 /* Ionicons.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -1053,6 +1054,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				9EB82DE72064C919004880B1 /* Ionicons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
